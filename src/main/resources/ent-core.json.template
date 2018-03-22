@@ -475,7 +475,8 @@
         "antiFloodClear": 60000,
         "sql": true,
         "db-schema": "flashmsg",
-        "mode": "${mode}"
+        "mode": "${mode}",
+	    "push-notif": ${pushNotif}
       }
     },
     {
