@@ -241,6 +241,7 @@ class SpringboardPlugin implements Plugin<Project> {
 		)
 		scn.append("\n}")
 
+		String version = project.getProperties().get("entCoreVersion")
 		if (!confMap.containsKey("entcoreVersion")) {
 			confProperties.append("entcoreVersion=" + version + "\n")
 		}
