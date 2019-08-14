@@ -11,7 +11,8 @@ clean () {
 }
 
 install() {
-  docker-compose run --rm -u "$USER_UID:$GROUP_GID" gradle gradle install publishToMavenLocal
+#  docker-compose run --rm -u "$USER_UID:$GROUP_GID" gradle gradle install publishToMavenLocal
+   docker-compose run --rm -u "$USER_UID:$GROUP_GID" gradle gradle install
 }
 
 publish() {
