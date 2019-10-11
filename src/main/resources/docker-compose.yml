@@ -1,5 +1,5 @@
 vertx:
-  image: opendigitaleducation/vertx-service-launcher:1.0.0
+  image: opendigitaleducation/vertx-service-launcher:1.1.0
   user: "1000:1000"
   ports:
     - "8090:8090"
@@ -19,7 +19,7 @@ vertx:
 #  MAVEN_REPOSITORIES: ''
 
 neo4j:
-  image: neo4j:3.1
+  image: neo4j:3.4
   volumes:
     - ./neo4j-conf:/conf
 
